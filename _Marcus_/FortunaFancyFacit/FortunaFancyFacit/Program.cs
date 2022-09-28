@@ -66,8 +66,11 @@ while (play)
         if (score>0) pix += bet * (score + 1);
         DisplayPix(3);
         Console.CursorTop = 11;
-        CenterText("Press [Enter] to proceed");
-        Console.ReadLine();
+        CenterText("Do you want to keep playing?");
+        CenterText("1 - Yes");
+        CenterText("2 - No ");
+        int goon = AskForNumber(min: 1, max: 2, left: 10, top: 13);
+        if (goon == 2) play = false;
     }
     DisplayGameScreen();
     Console.CursorTop = 11;
