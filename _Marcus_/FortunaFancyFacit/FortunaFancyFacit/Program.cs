@@ -70,7 +70,7 @@ while (play)
         CenterText("1 - Yes");
         CenterText("2 - No ");
         int goon = AskForNumber(min: 1, max: 2, left: 10, top: 13);
-        if (goon == 2) play = false;
+        if (goon == 2) 
     }
     DisplayGameScreen();
     Console.CursorTop = 11;
